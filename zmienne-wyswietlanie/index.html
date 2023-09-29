@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zadania z JavaScript</title>
+</head>
+
+<body>
+    <script> // 1. Definicja zmiennych a i b oraz obliczenia 
+        var a = 5;
+        var b = 10;
+        var suma = a + b;
+        var roznica = a - b;
+        var iloczyn = a * b;
+        var iloraz = a / b;
+        document.write("<b>Zadanie1. </b>",suma," , ",roznica," , ",iloczyn," , ",iloraz,"<br><br>");
+
+        // 2. Definicja i wyświetlanie 4 zmiennych różnych typów 
+        document.write("<b>Zadanie2.</b><br>")
+        var zmienna1 = "Tekst";
+        var zmienna2 = 123;
+        var zmienna3 = true;
+        var zmienna4 = [1, 2, 3];
+        document.write(zmienna1 + "<br>");
+        document.write(zmienna2 + "<br>");
+        document.write(zmienna3 + "<br>");
+        document.write(zmienna4 + "<br>");
+
+        // 3. Stworzenie listy htmlowej z 5 wartościami
+        document.write("<br><b>Zadanie3.</b><br>")
+        var lista = ["Wartość 1", "Wartość 2", "Wartość 3", "Wartość 4", "Wartość 5"];
+        document.write("<ul>");
+        for (var i = 0; i < lista.length; i++) {
+            document.write("<li>" + lista[i] + "</li>");
+        } document.write("</ul>");
+
+        // 4. Obliczenie potęgi 2 stopnia liczby 6 
+        document.write("<br><b>Zadanie4.</b><br>")
+        var liczba = 6;
+        var potega = Math.pow(liczba, 2);
+        document.write("Potęga 2 liczby 6 wynosi: " + potega + "<br>");
+
+        // 5. Utworzenie zmiennych z różnymi systemami liczbowymi
+        document.write("<br><b>Zadanie5.</b><br>")
+        var dziesietny = 12;
+        var osemkowy = 037; // Liczba ósemkowa (0 na początku)
+        var notacjawykladnicza = 0.12e-2;
+        var szesnastkowy = 0xACB; // Liczba szesnastkowa (0x na początku)
+        document.write(dziesietny,"<br>",osemkowy,"<br>",notacjawykladnicza,"<br>",szesnastkowy,"<br>");
+
+        // 6. Utworzenie fragmentu strony z wynikami mnożenia i dzielenia
+        document.write("<br><b>Zadanie6.</b>")
+        var wynikMnozenia = a * b;
+        var wynikDzielenia = suma / b;
+        document.write("<p>Mnożenie: " + a + " x " + b + " = " + wynikMnozenia + "</p>");
+        document.write("<p>Dzielenie: " + suma + " / " + b + " = " + wynikDzielenia + "</p>");
+    </script>
+</body>
+
+</html>
